@@ -1,0 +1,14 @@
+{
+  "name": "exercise-2",
+  "version": "0.0.0",
+  "description": "This is a small `nodejs` server which serves html files at `localhost:3000`",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
