@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- A small quiz -->
+    <h1>A Simple Quiz!</h1>
+
+    <form id="quiz-form" onsubmit="submitForm(event)">
+
+      <div class="question">
+        <h2>Question 1</h2>
+        <p>What is the capital of France</p>
+
+        <fieldset class="options">
+          <legend class="option">
+            <input type="checkbox" name="question-1-option-1" id="question-1-option-1" value="Paris">
+            <label for="question-1-option-1">Paris</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-1-option-2" id="question-1-option-2" value="London">
+            <label for="question-1-option-2">London</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-1-option-3" id="question-1-option-3" value="Berlin">
+            <label for="question-1-option-3">Berlin</label>
+          </legend>
+        </fieldset>
+      </div>
+
+      <div class="question">
+        <h2>Question 2</h2>
+        <p>What is the capital of Germany</p>
+
+        <fieldset class="options">
+          <legend class="option">
+            <input type="checkbox" name="question-2-option-1" id="question-2-option-1" value="Berlin">
+            <label for="question-2-option-1">Berlin</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-2-option-2" id="question-2-option-2" value="Paris">
+            <label for="question-2-option-2">Paris</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-2-option-3" id="question-2-option-3" value="London">
+            <label for="question-2-option-3">London</label>
+          </legend>
+        </fieldset>
+      </div>
+
+      <div class="question">
+        <h2>Question 3</h2>
+        <p>What is the capital of Italy</p>
+
+        <fieldset class="options">
+          <legend class="option">
+            <input type="checkbox" name="question-3-option-1" id="question-3-option-1" value="Rome">
+            <label for="question-3-option-1">Rome</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-3-option-2" id="question-3-option-2" value="Berlin">
+            <label for="question-3-option-2">Berlin</label>
+          </legend>
+          <legend class="option">
+            <input type="checkbox" name="question-3-option-3" id="question-3-option-3" value="Paris">
+            <label for="question-3-option-3">Paris</label>
+          </legend>
+        </fieldset>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
