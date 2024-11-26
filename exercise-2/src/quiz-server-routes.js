@@ -21,6 +21,8 @@ const createQuizRoutes = (app) => {
   app.post("/finish", (request, response) => {
     const { answers } = request.body;
 
+    console.log(answers);
+    
     if (answers.length !== QUIZ_ANSWERS.length) {
       return response.status(400).json({ error: "Invalid number of answers" });
     }
